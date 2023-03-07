@@ -1,0 +1,154 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 230px 0 130px;
+}
+
+/* header style ===================================================== */
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #2A3238;
+  position:fixed;
+  top: 0;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  z-index: 99999;
+}
+.logo-wrap h1{
+  width: 80px;
+}
+#gnb{
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  background-color: #2a3238;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+#gnb.fixed{
+  position: fixed;
+  top: 0;
+}
+#gnb .depth{
+  width: 30%;
+}
+#gnb .depth ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#gnb .depth ul li{
+  width: 20%;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+#gnb .search{
+  padding: 0 30px;
+}
+#gnb .search i{
+  width: 20px;
+  color: white;
+}
+#gnb .hbg-gnb{
+  display: none;
+}
+
+/* section style ===================================================== */
+.section-wrap {
+  width: 100%;
+  /* margin-top: 210px; */
+}
+.flex{
+  display: flex;
+}
+
+/* title style ===================================================== */
+.sub-title {
+  /* 필요한대로 위치, 마진 수정하기 */
+}
+.sub-title h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #B8B8B8;
+  position: relative;
+}
+.sub-title h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+.sub-title h3 {
+  font-size: 3.25rem;
+  margin: 40px 0;
+}
+.sub-title p {
+  font-size: 1.625rem;
+  color: #B8B8B8;
+}
+
+
+
+
+/* tablet ===================================================== */
+@media screen and (max-width:1260px) and (min-width: 768px) {
+  .container {
+    width: 92%; /* 1160px */
+    margin: 0 auto;
+  }
+
+  /* header */
+  #gnb {
+    padding: 0 50px;
+  }
+  #gnb .depth {
+    width: 45%;
+  }
+
+  /* title style */
+  .sub-title h3 {
+    font-size: 2.25rem;
+    margin: 50px 0;
+  }
+  .sub-title p {
+    font-size: 1.25rem;
+  }
+}
+
+/* mobile ===================================================== */
+@media screen and (max-width:767px) and (min-width: 360px) {
+  .container {
+    width: 96%; /* 737px */
+    margin: 0 auto;
+  }
+
+  /* header */
+  #gnb {
+    padding: 0 15px;
+  }
+  #gnb .depth, #gnb .search {
+    display: none;
+  }
+  #gnb .hbg-gnb {
+    display: flex;
+  }
+  #gnb .hbg-gnb i {
+    font-size: 30px;
+  }
+
+  /* title style */
+  .sub-title h3 {
+    font-size: 1.875rem;
+    margin: 40px 0;
+  }
+  .sub-title p {
+    font-size: 1.625rem;
+  }
+}

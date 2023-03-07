@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'song myung';
+  src: url(/font/Song_Myung/SongMyung-Regular.ttf);
+}
+.title-wrap {padding-bottom: 40px;}
+.section-wrap:not(:first-child) {margin-top: 150px;}
+.brush-container {margin: 0 auto; padding: 0 167px;}
+.brush-container.flex {display: block;}
+.brush-item{
+  /* background-color: aquamarine; */
+  width: 100%;
+  max-width: 1178px;
+  margin-bottom: 80px;
+}
+.brush-item.flex {
+  justify-content:baseline;
+  align-items: top;
+}
+.brush-item .left img {width: 480px;}
+.brush-item .right {padding: 30px 0 30px 40px;}
+/* .brush-item .right div{
+  padding-left: 25px;
+} */
+.brush-item h2{ font-size: 2rem; font-family: 'song myung'; margin-bottom: 25px;}
+.brush-item ul { padding-left: 15px; list-style-position: outside;}
+.brush-item ul li {
+  font-size: 1rem;
+  list-style: disc;
+  color: #bbb;
+  padding-left: -5px;
+}
+/* 미디어쿼리 */
+@media screen and (max-width: 1260px){
+  .title-wrap {padding-bottom: 0;}
+  .brush-container {padding: 0;}
+  .brush-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .brush-item { margin-bottom: 50px;}
+  .brush-item:first-child {padding-right: 21px;}
+  .brush-item:last-child {padding-left: 21px;}
+  .brush-wrap:last-child .brush-item {margin-bottom: 0;}
+  .brush-item.flex {display: block;}
+  .brush-item .left img { width: 538px;}
+  .brush-item .right { padding: 30px 0 0; }
+  /* .brush-item .right div{ padding-left: 15px; } */
+  .brush-item h2 {font-size: 1.5rem; margin-bottom: 20px;}
+  .brush-item ul li {font-size: 0.875rem;}
+}
+
+@media screen and (max-width: 768px){
+  .brush-item .right{padding: 15px 0 0;}
+  .brush-item .left img{ width: 345px;}
+  .brush-item h2{font-size: 1.375rem; margin-bottom: 15px;}
+  .brush-item ul li{font-size: 0.75rem;}
+}
+@media screen and (max-width:360px){
+  .container {padding: 150px 0 50px;}
+  .sub-title h2 {font-size: 1rem;}
+  .sub-title h3 {font-size: 1.25rem;}
+  .section-wrap:not(:first-child) {margin-top: 70px;}
+  .brush-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .brush-wrap:last-child .brush-item {margin-bottom: 50px;}
+  .brush-wrap:last-child .brush-item:last-child {margin-bottom: 0;}
+  .brush-item:first-child{padding-right: 0;}
+  .brush-item:last-child{padding-left: 0;}
+  .brush-item h2 {font-size: 1.25rem; margin-bottom: 5px;}
+  .brush-item ul li {font-size: 0.625rem;}
+}
